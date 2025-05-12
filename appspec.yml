@@ -1,0 +1,23 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/app/backend
+file_exists_behavior: OVERWRITE
+
+hooks:
+  AfterInstall:
+    - location: scripts/set_permissions.sh
+      timeout: 300
+      runas: root
+    - location: scripts/init.sh
+      timeout: 300
+      runas: webapp
+  ApplicationStart:
+    - location: scripts/start.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop.sh
+      timeout: 300
+      runas: root
