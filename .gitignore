@@ -1,0 +1,69 @@
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual Environments
+venv/
+env/
+.venv/
+ENV/
+
+# Environment Variables
+.env
+*.env
+.env.*
+!.env.example
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Testing
+coverage/
+.coverage
+coverage.xml
+*.cover
+htmlcov/
+
+# Docker
+docker-compose.override.yml
+*.dockerignore
+Dockerfile.local
+*.bak
+
+# Database
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Dependency Directories
+node_modules/
+vendor/
+
+# Sensitive Directories
+secrets/
+credentials/
+```
